@@ -5,6 +5,11 @@
 
 }
 
+.navbar {
+    position: fixed; /* Fixa a barra de navegação no topo */
+    width: 100%;
+    padding: 10px 0; /* Adiciona algum espaçamento interno para melhor aparência */
+}
 
 
 #capa{
@@ -16,7 +21,7 @@
     /* função para diminuir o blilho da imagem da capa */
     /* Sem atingir os textos da imagem */
 
-    -webkit-filter: brightness(0.2);
+    -webkit-filter: brightness(0.1);
     height: 100vh;
     width: 100vw;
     top: 0;
