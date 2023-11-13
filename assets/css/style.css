@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+#capa{
+    background-image: url("../img/celestial.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    object-fit: cover;
+    /* função para diminuir o blilho da imagem da capa */
+    /* Sem atingir os textos da imagem */
+
+    -webkit-filter: brightness(0.2);
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.main-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* função para deixar os textos mais claros */
+
+}
+
+body{
+    height: 5000px;
+    overflow-x: hidden;
+}
+
+.nav-link{
+    color: rgba(255, 255, 255, 0.80);
+    text-align: center;
+    font-family: Amaranth;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: block;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-family: 'Amaranth', sans-serif;
+    color: rgba(255, 255, 255, 0.80);
+}
+
+.titulo{
+    color: #F28B30;
+    font-family: Fredericka the Great;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.subtitulo{
+    color: rgba(255, 255, 255, 0.91);
+    font-family: Amaranth;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 62px; 
+}
+
+.sub{
+    color: rgba(242, 139, 48, 0.80);
+    font-family: Amaranth;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 62px;
+}
