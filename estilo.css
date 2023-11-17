@@ -1,0 +1,23 @@
+.footer_initial{
+    text-align: center;
+}
+.section_geral{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+      
+}
+.footer_lista1{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer_lista2{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.subtitulo{
+    text-align: center;
+    text
+}
