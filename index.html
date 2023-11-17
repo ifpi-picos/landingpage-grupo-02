@@ -15,16 +15,21 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <!-- Seção navbar -->
         <nav class="navbar navbar-expand-lg navbar-light custom-navbar fixed-top">
             <div class="container">
-                <img class="logo" src="assets/img/Logo acarte.png" alt="Logo da navbar" width="50" height="50">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand text-white" href="#">
+                    <img src="assets/img/Logo acarte.png" width="30" height="30" class="d-inline-block align-top"
+                        alt="Texto da logo">
+                    ACARTE
+                </a>
+                <button class="navbar-toggler custom-button" type="button" data-toggle="collapse"
+                    data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false"
+                    aria-label="Alterna navegação">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end">
+                <div class="collapse navbar-collapse justify-content-end" id="conteudoNavbarSuportado">
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link" href="#inicio">Home</a>
@@ -49,11 +54,12 @@
         <section class="container-fluid pt-5" id="capa">
             <div class="main-text container">
                 <div class="row">
-                    <div class="col">
-                        <img calss="img-logo" src=" assets/img/Logo acarte.png" alt="" width="200" height="200">
+                    <div class="col-lg-3 text-center">
+                        <img calss="img-logo ml-5" src=" assets/img/Logo acarte.png" alt="" width="200" height="200">
                         <h1 class="titulo">ACARTE</h1>
-                        <h3 class="subtitulo">Associação Cultural Arte <span style="color: #F28B30;">em
+                        <h3 class="subtitulo text-center">Associação Cultural Arte <span style="color: #F28B30;">em
                                 Tela</span></h3>
+                        <button type="button" class="btn btn-outline-warning w-100 mt-5">FALE CONOSCO</button>
                     </div>
                 </div>
         </section>
@@ -65,8 +71,14 @@
 
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
 </body>
