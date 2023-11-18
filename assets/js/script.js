@@ -6,7 +6,7 @@ navLinks.forEach((link) => {
   });
 
   link.addEventListener("mouseout", () => {
-    link.style.color = ""; // aqui você pode definir a cor padrão dos textos
+    link.style.color = ""; // aqui você pode definir a cor padrão dos textoss
   });
 });
 
