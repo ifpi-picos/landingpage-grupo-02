@@ -26,3 +26,13 @@ items.forEach((el) => {
     next = next.nextElementSibling;
   }
 });
+
+// Botão  fale conosco tela inicial
+document.addEventListener("DOMContentLoaded", function() {
+  const btnFaleConosco = document.querySelector("#btnFaleConosco");
+  btnFaleConosco.addEventListener("click", () => {
+    window.open("https://www.instagram.com/acarte1111/");
+  });
+});
+
+
