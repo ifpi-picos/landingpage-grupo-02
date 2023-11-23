@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Roboto:ital,wght@0,100;1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Roboto:ital,wght@0,100;1,300&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Fredericka+the+Great&family=Roboto:ital,wght@0,100;1,300&display=swap");
+
+/* Seção início */
 /* Seção início */
 /* Seção início */
 * {
@@ -173,6 +176,19 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* carrossel */
+
+.tema-fonte {
+  /* font-family: 'Fredericka the Great', serif; */
+  font-family: "Delius Swash Caps", "cursive" !important;
+  color: #f28b30;
+  /* font-weight: bold; */
+}
+
+.tema-fonte-2 {
+  font-family: "Delius Swash Caps", "cursive" !important;
+  color: #f28b30;
+}
+
 #modalImage {
   max-width: 100%;
   height: auto;
@@ -373,34 +389,7 @@ body {
 
 .menu-titulo {
   text-align: center;
-}
-
-li {
-  margin-bottom: 10px;
-}
-
-/* Seção menu */
-.menu_inicial {
-  text-align: center;
-}
-.menu-2 {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.menu-lista {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.menu-lista {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.menu-titulo {
-  text-align: center;
+  color: #f28b30;
 }
 
 li {
