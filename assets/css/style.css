@@ -42,7 +42,6 @@ body:first-child .navbar {
 }
 
 body {
-  height: 5000px;
   overflow-x: hidden;
 }
 
@@ -278,7 +277,7 @@ body::-webkit-scrollbar-thumb {
   background-color: #0c0c0c;
 }
 #carouselExampleControls .color--p {
-  color: rgb(236, 117, 5);
+  color: rgb(255, 255, 255);
 }
 
 /* Estilos específicos para o segundo carrossel */
