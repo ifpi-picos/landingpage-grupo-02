@@ -4,8 +4,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Fredericka+the+Great&family=Roboto:ital,wght@0,100;1,300&display=swap");
 
 /* Seção início */
-/* Seção início */
-/* Seção início */
 * {
   margin: 0;
   padding: 0;
@@ -46,6 +44,10 @@ body:first-child .navbar {
 
 body {
   overflow-x: hidden;
+}
+ 
+.my-4{
+  border-color: #f28b30;
 }
 
 .nav-link {
@@ -390,6 +392,7 @@ body {
 .menu-titulo {
   text-align: center;
   color: #f28b30;
+  font-family: "Delius Swash Caps", "cursive" !important;
 }
 
 li {
