@@ -252,10 +252,10 @@ body::-webkit-scrollbar-thumb {
 
 #carouselExampleControls .carousel-control-prev {
   position: absolute;
-  left: -7%;
+  left: -3%;
 }
 #carouselExampleControls .carousel-control-next {
-  margin-right: -7%;
+  margin-right: -3%;
 }
 
 #carouselExampleControls .carousel-control-next {
@@ -327,10 +327,10 @@ body::-webkit-scrollbar-thumb {
 
 #organizacao .carousel-control-prev {
   position: absolute;
-  left: -7%;
+  left: -3%;
 }
 #organizacao .carousel-control-next {
-  margin-right: -7%; /* Alterado de -100px para -10% */
+  margin-right: -3%; /* Alterado de -100px para -10% */
 }
 #organizacao .carousel-control-next {
   margin-left: 1em; /* Alterado de 10px para 1em */
