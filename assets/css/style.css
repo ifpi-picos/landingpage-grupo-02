@@ -45,8 +45,8 @@ body:first-child .navbar {
 body {
   overflow-x: hidden;
 }
- 
-.my-4{
+
+.my-4 {
   border-color: #f28b30;
 }
 
@@ -195,6 +195,7 @@ body::-webkit-scrollbar-thumb {
   max-width: 100%;
   height: auto;
 }
+
 #imageModal .modal-content {
   border: none;
   background-color: rgba(0, 0, 0, 0.859);
@@ -208,6 +209,7 @@ body::-webkit-scrollbar-thumb {
 #imageModal .modal-body {
   overflow: hidden;
 }
+
 .btn-close {
   background: none;
   border: none;
@@ -225,6 +227,7 @@ body::-webkit-scrollbar-thumb {
   margin-left: -18px;
   margin-top: -10px;
 }
+
 .modal.fade .modal-dialog {
   transform: translate3d(0, 30%, 0);
 }
@@ -232,16 +235,31 @@ body::-webkit-scrollbar-thumb {
 .modal.show .modal-dialog {
   transform: translate3d(0, 0, 0);
 }
+
+/* Consulta de mídia para dispositivos com largura máxima de 600px */
+@media only screen and (max-width: 600px) {
+  #imageModal .modal-dialog {
+    margin-left: 0;
+  }
+
+  .square {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
 #carouselExampleControls .carousel-control-prev {
   position: absolute;
-  left: -9%;
+  left: -7%;
 }
 #carouselExampleControls .carousel-control-next {
-  margin-right: -100px;
+  margin-right: -7%;
 }
 
 #carouselExampleControls .carousel-control-next {
-  margin-left: 10px;
+  margin-left: 1em;
 }
 
 #carouselExampleControls .carousel-inner {
@@ -251,6 +269,7 @@ body::-webkit-scrollbar-thumb {
   margin: 0 0.5em;
   box-shadow: 2px 6px 8px 0 rgba(21, 22, 26, 0.18);
   border: none;
+  height: auto;
 }
 
 #carouselExampleControls .card .img-wrapper {
@@ -262,11 +281,13 @@ body::-webkit-scrollbar-thumb {
 }
 #carouselExampleControls .card img {
   max-height: 100%;
+  width: auto;
+  height: auto; /* Adicionado para garantir que a altura da imagem seja ajustada automaticamente */
+  object-fit: cover; /* Adicionado para garantir que a imagem cubra todo o espaço disponível */
 }
 @media (max-width: 767px) {
   #carouselExampleControls .carousel-inner .carousel-item > div {
     display: none;
-    margin-left: 120px;
   }
   #carouselExampleControls .carousel-inner .carousel-item > div:first-child {
     display: block;
@@ -298,19 +319,21 @@ body::-webkit-scrollbar-thumb {
 #carouselExampleControls .color--p {
   color: rgb(255, 255, 255);
 }
+#carouselExampleControls .card .card-body {
+  padding: 1em; /* Alterado de 10rem para 1em */
+}
 
 /* Estilos específicos para o segundo carrossel */
 
 #organizacao .carousel-control-prev {
   position: absolute;
-  left: -9%;
+  left: -7%;
 }
 #organizacao .carousel-control-next {
-  margin-right: -100px;
+  margin-right: -7%; /* Alterado de -100px para -10% */
 }
-
 #organizacao .carousel-control-next {
-  margin-left: 10px;
+  margin-left: 1em; /* Alterado de 10px para 1em */
 }
 
 #organizacao .carousel-inner {
@@ -332,6 +355,7 @@ body::-webkit-scrollbar-thumb {
 }
 #organizacao .card img {
   max-height: 100%;
+  width: auto; /* Adicionado para garantir que a imagem seja redimensionada corretamente */
 }
 @media (max-width: 767px) {
   #organizacao .carousel-inner .carousel-item > div {
@@ -362,7 +386,7 @@ body::-webkit-scrollbar-thumb {
   transform: translateX(0);
 }
 #organizacao .card .card-body {
-  padding: 10rem; /* Ajusta o preenchimento interno do card */
+  padding: 1em; /* Alterado de 10rem para 1em */
 }
 
 body {
@@ -400,7 +424,7 @@ li {
   margin-bottom: 10px;
 }
 
-.fundo-container{
+.fundo-container {
   background-color: #000000;
 }
 
@@ -408,13 +432,13 @@ li {
   .imagem-ifpi {
     margin-left: 150px;
     margin-top: 20px;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
   }
 
   .imagem-mambee {
     margin-right: 150px;
     margin-top: 20px;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
   }
 
   .texto-rodape {
@@ -422,8 +446,6 @@ li {
   }
 
   .col-md-3.d-flex.align-items-center {
-    justify-content: flex-end; 
+    justify-content: flex-end;
   }
 }
-
-
