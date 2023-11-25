@@ -266,6 +266,7 @@ body::-webkit-scrollbar-thumb {
 @media (max-width: 767px) {
   #carouselExampleControls .carousel-inner .carousel-item > div {
     display: none;
+    margin-left: 120px;
   }
   #carouselExampleControls .carousel-inner .carousel-item > div:first-child {
     display: block;
@@ -399,6 +400,28 @@ li {
   margin-bottom: 10px;
 }
 
-.menu-rodape{
+.fundo-container{
   background-color: #000000;
+}
+
+@media (min-width: 768px) {
+  .imagem-ifpi {
+    margin-left: 150px;
+    margin-top: 20px;
+    margin-bottom: 20px; 
+  }
+
+  .imagem-mambee {
+    margin-right: 150px;
+    margin-top: 20px;
+    margin-bottom: 20px; 
+  }
+
+  .texto-rodape {
+    margin-top: 80px;
+  }
+
+  .col-md-3.d-flex.align-items-center {
+    justify-content: flex-end; 
+  }
 }
