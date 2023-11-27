@@ -253,10 +253,10 @@ body::-webkit-scrollbar-thumb {
 
 #carouselExampleControls .carousel-control-prev {
   position: absolute;
-  left: -3%;
+  left: -7%;
 }
 #carouselExampleControls .carousel-control-next {
-  margin-right: -3%;
+  margin-right: -7%;
 }
 
 #carouselExampleControls .carousel-control-next {
@@ -293,6 +293,15 @@ body::-webkit-scrollbar-thumb {
   #carouselExampleControls .carousel-inner .carousel-item > div:first-child {
     display: block;
   }
+  #carouselExampleControls .carousel-control-prev {
+    left: -5%; /* Posição específica para dispositivos móveis */
+    /* Outros estilos específicos para dispositivos móveis */
+  }
+
+  #carouselExampleControls .carousel-control-next {
+    margin-right: -5%; /* Posição específica para dispositivos móveis */
+    /* Outros estilos específicos para dispositivos móveis */
+  }
 }
 #carouselExampleControls .carousel-inner .carousel-item.active,
 #carouselExampleControls .carousel-inner .carousel-item-next,
@@ -328,10 +337,10 @@ body::-webkit-scrollbar-thumb {
 
 #organizacao .carousel-control-prev {
   position: absolute;
-  left: -3%;
+  left: -7%;
 }
 #organizacao .carousel-control-next {
-  margin-right: -3%; /* Alterado de -100px para -10% */
+  margin-right: -7%; /* Alterado de -100px para -10% */
 }
 #organizacao .carousel-control-next {
   margin-left: 1em; /* Alterado de 10px para 1em */
@@ -364,6 +373,15 @@ body::-webkit-scrollbar-thumb {
   }
   #organizacao .carousel-inner .carousel-item > div:first-child {
     display: block;
+  }
+  #organizacao .carousel-control-prev {
+    left: -5%; /* Posição específica para dispositivos móveis */
+    /* Outros estilos específicos para dispositivos móveis */
+  }
+
+  #organizacao .carousel-control-next {
+    margin-right: -5%; /* Posição específica para dispositivos móveis */
+    /* Outros estilos específicos para dispositivos móveis */
   }
 }
 #organizacao .carousel-inner .carousel-item.active,
