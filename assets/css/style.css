@@ -294,12 +294,12 @@ body::-webkit-scrollbar-thumb {
     display: block;
   }
   #carouselExampleControls .carousel-control-prev {
-    left: -5%; /* Posição específica para dispositivos móveis */
+    left: -3%; /* Posição específica para dispositivos móveis */
     /* Outros estilos específicos para dispositivos móveis */
   }
 
   #carouselExampleControls .carousel-control-next {
-    margin-right: -5%; /* Posição específica para dispositivos móveis */
+    margin-right: -3%; /* Posição específica para dispositivos móveis */
     /* Outros estilos específicos para dispositivos móveis */
   }
 }
@@ -375,12 +375,12 @@ body::-webkit-scrollbar-thumb {
     display: block;
   }
   #organizacao .carousel-control-prev {
-    left: -5%; /* Posição específica para dispositivos móveis */
+    left: -3%; /* Posição específica para dispositivos móveis */
     /* Outros estilos específicos para dispositivos móveis */
   }
 
   #organizacao .carousel-control-next {
-    margin-right: -5%; /* Posição específica para dispositivos móveis */
+    margin-right: -3%; /* Posição específica para dispositivos móveis */
     /* Outros estilos específicos para dispositivos móveis */
   }
 }
