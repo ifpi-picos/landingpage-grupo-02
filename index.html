@@ -1,1816 +1,1269 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ACARTE</title>
-    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <!-- <link rel="stylesheet" href="assets/bootstrap/bootstrap-5.0.2-dist/css/bootstrap-grid.min.css"> -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
 
-  <body>
-    <header class="header">
-      <!-- Seção navbar -->
-      <nav class="navbar navbar-expand-lg navbar-light custom-navbar fixed-top">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ACARTE</title>
+  <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <!-- <link rel="stylesheet" href="assets/bootstrap/bootstrap-5.0.2-dist/css/bootstrap-grid.min.css"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <!-- Seção navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light custom-navbar fixed-top">
+      <div class="container">
+        <a class="navbar-brand text-white" href="#">
+          <img src="assets/img/Logo acarte.png" width="30" height="30" class="d-inline-block align-top img-fluid"
+            alt="Texto da logo" />
+          ACARTE
+        </a>
+        <button class="navbar-toggler custom-button" type="button" data-toggle="collapse"
+          data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false"
+          aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="conteudoNavbarSuportado">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#capa">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#obras">Obras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#organizacoes">Organizações</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre">Sobre</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- seção inicio -->
+    <section class="container-fluid pt-5" id="capa">
+      <div class="main-text container">
+        <div class="row">
+          <div class="col-lg-3 text-center">
+            <img calss="img-logo ml-5" src=" assets/img/Logo acarte.png" alt="" width="200" height="200" />
+            <h1 class="titulo">ACARTE</h1>
+            <h3 class="subtitulo text-center">
+              Associação Cultural Arte
+              <span style="color: #f28b30">em Tela</span>
+            </h3>
+            <button type="button" class="btn btn-out-warning w-100 mt-5" id="btnFaleConosco">
+              FALE CONOSCO
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="obras">
+      <div class="py-5">
         <div class="container">
-          <a class="navbar-brand text-white" href="#">
-            <img
-              src="assets/img/Logo acarte.png"
-              width="30"
-              height="30"
-              class="d-inline-block align-top img-fluid"
-              alt="Texto da logo"
-            />
-            ACARTE
-          </a>
-          <button
-            class="navbar-toggler custom-button"
-            type="button"
-            data-toggle="collapse"
-            data-target="#conteudoNavbarSuportado"
-            aria-controls="conteudoNavbarSuportado"
-            aria-expanded="false"
-            aria-label="Alterna navegação"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="conteudoNavbarSuportado"
-          >
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#capa">Home</a>
+          <div class="row">
+            <div class="col-12 text-center">
+              <h1 class="display-4 tema-fonte">Obras de Arte</h1>
+              <p class="lead">Explore nossa coleção de obras de arte.</p>
+              <p class="lead"></p>
+            </div>
+          </div>
+          <!-- Carousel -->
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active w-100 h-100 obejct-fit-cover">
+                <div class="col-md-3">
+                  <div class="card"
+                    onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_02_Imagem_0001.jpg')">
+                    <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_02_Imagem_0001_resized.jpg"
+                      class="img-fluid" style="height: 22rem" />
+                    <div class="color--card-body card-body">
+                      <p class="color--p card-text">
+                        Nome: Aurea Abstrata <br />Dimensão: 70/55 cm<br />Ano:
+                        2019
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="col-md-3">
+                  <div class="card"
+                    onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_03_Imagem_0001.jpg')">
+                    <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_03_Imagem_0001_resized.jpg"
+                      class="img-fluid" style="height: 22rem" />
+                    <div class="color--card-body card-body">
+                      <p class="color--p card-text">
+                        Nome: Ossanha <br />Dimensão: 70/55 cm<br />Ano: 2019
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="col-md-3">
+                  <div class="card"
+                    onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_04_Imagem_0001.jpg')">
+                    <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_04_Imagem_0001_resized.jpg"
+                      class="img-fluid" style="height: 22rem" />
+                    <div class="color--card-body card-body">
+                      <p class="color--p card-text">
+                        Nome: Árvore Da Vida <br />Dimensão: 70/55 cm<br />Ano:
+                        2019
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="col-md-3">
+                  <div class="card"
+                    onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_05_Imagem_0001.jpg')">
+                    <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_05_Imagem_0001.jpg" class="img-fluid"
+                      style="height: 22rem" />
+                    <div class="color--card-body card-body">
+                      <p class="color--p card-text">
+                        Nome: Amazônia Oculta <br />Dimensão: 80/60 cm<br />Ano:
+                        2019
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3">
+                  <div class="card"
+                    onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_06_Imagem_0001.jpg')">
+                    <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_06_Imagem_0001.jpg" class="img-fluid"
+                      style="height: 22rem" />
+                    <div class="color--card-body card-body">
+                      <p class="color--p card-text">
+                        Nome: 3 Marias <br />Dimensão: 60/80cm<br />Ano: 2019
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3">
+                  <div class="card"
+                    onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_07_Imagem_0001.jpg')">
+                    <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_07_Imagem_0001.jpg" class="img-fluid"
+                      style="height: 22rem" />
+                    <div class="color--card-body card-body">
+                      <p class="color--p card-text">
+                        Nome: Efeito Natural <br />Dimensão: 80/60 cm<br />Ano:
+                        2019
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3">
+                  <div class="card"
+                    onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_08_Imagem_0001.jpg')">
+                    <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_08_Imagem_0001.jpg" class="img-fluid"
+                      style="height: 22rem" />
+                    <div class="color--card-body card-body">
+                      <p class="color--p card-text">
+                        Nome: Simbiose <br />Dimensão: 80/60 cm<br />Ano: 2019
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3">
+                  <div class="card"
+                    onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_09_Imagem_0001.jpg')">
+                    <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_09_Imagem_0001.jpg" class="img-fluid"
+                      style="height: 22rem" />
+                    <div class="color--card-body card-body">
+                      <p class="color--p card-text">
+                        Nome: Chronútero<br />Dimensão: 55/70 cm<br />Ano:
+                        2019
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3">
+                  <div class="card"
+                    onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_10_Imagem_0001.jpg')">
+                    <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_10_Imagem_0001.jpg" class="img-fluid"
+                      style="height: 22rem" />
+                    <div class="color--card-body card-body">
+                      <p class="color--p card-text">
+                        Nome: A Raça Humana<br />Dimensão: 70/100 cm<br />Ano:
+                        2019
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3">
+                  <div class="card"
+                    onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_11_Imagem_0001.jpg')">
+                    <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_11_Imagem_0001.jpg" class="img-fluid"
+                      style="height: 22rem" />
+                    <div class="color--card-body card-body">
+                      <p class="color--p card-text">
+                        Nome: Alegoria Da Caverna<br />Dimensão: 100/100 cm<br />Ano:
+                        2019
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3">
+                  <div class="card"
+                    onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_12_Imagem_0001.jpg')">
+                    <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_12_Imagem_0001.jpg" class="img-fluid"
+                      style="height: 22rem" />
+                    <div class="color--card-body card-body">
+                      <p class="color--p card-text">
+                        Nome: Jardim <br />Dimensão: 50/150 cm<br />Ano: 2019
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3">
+                  <div class="card"
+                    onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_13_Imagem_0001.jpg')">
+                    <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_13_Imagem_0001_resized.jpg"
+                      class="img-fluid" style="height: 22rem" />
+                    <div class="color--card-body card-body">
+                      <p class="color--p card-text">
+                        Nome: Útero <br />Dimensão: 75/50 cm<br />Ano: 2019
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3">
+                  <div class="card"
+                    onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_14_Imagem_0001.jpg')">
+                    <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_14_Imagem_0001_resized.jpg"
+                      class="img-fluid" style="height: 22rem" />
+                    <div class="color--card-body card-body">
+                      <p class="color--p card-text">
+                        Nome: A Cozinha <br />Dimensão: 70/50 cm<br />Ano:
+                        2019
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3">
+                  <div class="card"
+                    onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_15_Imagem_0001.jpg')">
+                    <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_15_Imagem_0001.jpg" class="img-fluid"
+                      style="height: 22rem" />
+                    <div class="color--card-body card-body">
+                      <p class="color--p card-text">
+                        Nome: O Caminho <br />Dimensão: 80/60 cm<br />Ano:
+                        2019
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3">
+                  <div class="card"
+                    onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_16_Imagem_0001.jpg')">
+                    <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_28_Imagem_0001_resized.jpg"
+                      class="img-fluid" style="height: 22rem" />
+                    <div class="color--card-body card-body">
+                      <p class="color--p card-text">
+                        Nome: Elevador Lacerda <br />Dimensão: 70/55 cm<br />Ano:
+                        2019
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3">
+                  <div class="card"
+                    onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_17_Imagem_0001.jpg')">
+                    <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_17_Imagem_0001.jpg" class="img-fluid"
+                      style="height: 22rem" />
+                    <div class="color--card-body card-body">
+                      <p class="color--p card-text">
+                        Nome: Universo Paralelo <br />Dimensão: 150/100 cm<br />Ano:
+                        2018
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3">
+                  <div class="card"
+                    onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_18_Imagem_0001.jpg')">
+                    <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_18_Imagem_0001.jpg" class="img-fluid"
+                      style="height: 22rem" />
+                    <div class="color--card-body card-body">
+                      <p class="color--p card-text">
+                        Nome: Gaia <br />Dimensão: 70/55 cm<br />Ano: 2018
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3">
+                  <div class="card"
+                    onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_19_Imagem_0001.jpg')">
+                    <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_19_Imagem_0001.jpg" class="img-fluid"
+                      style="height: 22rem" />
+                    <div class="color--card-body card-body">
+                      <p class="color--p card-text">
+                        Nome: Pollock Expression<br />Dimensão: 70/55 cm<br />Ano:
+                        2018
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3">
+                  <div class="card"
+                    onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_20_Imagem_0001.jpg')">
+                    <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_20_Imagem_0001.jpg" class="img-fluid"
+                      style="height: 22rem" />
+                    <div class="color--card-body card-body">
+                      <p class="color--p card-text">
+                        Nome: <b>Nirvana</b> <br />Dimensão: 80/60 cm<br />Ano:
+                        2018
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3">
+                  <div class="card"
+                    onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_21_Imagem_0001.jpg')">
+                    <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_21_Imagem_0001.jpg" class="img-fluid"
+                      style="height: 22rem" />
+                    <div class="color--card-body card-body">
+                      <p class="color--p card-text">
+                        Nome: O - <br />Dimensão: 80/60 cm<br />Ano: 2018
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3">
+                  <div class="card"
+                    onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_22_Imagem_0001.jpg')">
+                    <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_22_Imagem_0001.jpg" class="img-fluid"
+                      style="height: 22rem" />
+                    <div class="color--card-body card-body">
+                      <p class="color--p card-text">
+                        Nome: Azul <br />Dimensão: 80/60 cm<br />Ano: 2018
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3">
+                  <div class="card"
+                    onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_23_Imagem_0001.jpg')">
+                    <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_23_Imagem_0001.jpg" class="img-fluid"
+                      style="height: 22rem" />
+                    <div class="color--card-body card-body">
+                      <p class="color--p card-text">
+                        Nome: Híbrido <br />Dimensão: 75/55 cm<br />Ano: 2018
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3">
+                  <div class="card"
+                    onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_24_Imagem_0001.jpg')">
+                    <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_24_Imagem_0001.jpg" class="img-fluid"
+                      style="height: 22rem" />
+                    <div class="color--card-body card-body">
+                      <p class="color--p card-text">
+                        CHAVEIROS <br />PRINTS EM ADESIVO<br />SOBRE MDF
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3">
+                  <div class="card"
+                    onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_26_Imagem_0001.jpg')">
+                    <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_26_Imagem_0001.jpg" class="img-fluid"
+                      style="height: 22rem" />
+                    <div class="color--card-body card-body">
+                      <p class="color--p card-text">
+                        Nome: Miniatura-Simbiose<br />Dimensão: 10/15 cm<br />Print
+                        Adesivo Em MDF
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3">
+                  <div class="card"
+                    onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_27_Imagem_0001.jpg')">
+                    <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_27_Imagem_0001.jpg" class="img-fluid"
+                      style="height: 22rem" />
+                    <div class="color--card-body card-body">
+                      <p class="color--p card-text">
+                        Nome: Miniatura-Chronutero<br />Dimensão: 10/15 cm<br />Print
+                        Adesivo Em MDF
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3">
+                  <div class="card"
+                    onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_28_Imagem_0001.jpg')">
+                    <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_28_Imagem_0001_resized.jpg"
+                      class="img-fluid" style="height: 22rem" />
+                    <div class="color--card-body card-body">
+                      <p class="color--p card-text">
+                        Nome: Miniatura- Elevador Lacerda<br />Dimensão: 10/15
+                        cm<br />Print Adesivo Em MDF
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3">
+                  <div class="card"
+                    onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_29_Imagem_0001.jpg')">
+                    <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_29_Imagem_0001.jpg" class="img-fluid"
+                      style="height: 22rem" />
+                    <div class="color--card-body card-body">
+                      <p class="color--p card-text">
+                        Nome: Miniatura-O Caminho<br />Dimensão: 10/15 cm<br />Print
+                        Adesivo Em MDF
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3">
+                  <div class="card"
+                    onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_30_Imagem_0001.jpg')">
+                    <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_14_Imagem_0001_resized.jpg"
+                      class="img-fluid" style="height: 22rem" />
+                    <div class="color--card-body card-body">
+                      <p class="color--p card-text">
+                        Nome: Miniatura-A Cozinha <br />Dimensão: 10/15 cm<br />Print
+                        Adesivo Em MDF
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3">
+                  <div class="card"
+                    onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_31_Imagem_0001.jpg')">
+                    <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_31_Imagem_0001.jpg" class="img-fluid"
+                      style="height: 22rem" />
+                    <div class="color--card-body card-body">
+                      <p class="color--p card-text">
+                        Nome: Miniatura-A RAça Humana<br />Dimensão: 10/15
+                        cm<br />Print Adesivo Em MDF
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3">
+                  <div class="card"
+                    onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_32_Imagem_0001.jpg')">
+                    <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_32_Imagem_0001.jpg" class="img-fluid"
+                      style="height: 22rem" />
+                    <div class="color--card-body card-body">
+                      <p class="color--p card-text">
+                        Nome: Miniatura-As 3 Marias<br />Dimensão: 10/15 cm<br />Print
+                        Adesivo Em MDF
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3">
+                  <div class="card"
+                    onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_04_Imagem_0001_resized.jpg')">
+                    <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_04_Imagem_0001_resized.jpg"
+                      class="img-fluid" style="height: 22rem" />
+                    <div class="color--card-body card-body">
+                      <p class="color--p card-text">
+                        Nome: Miniatura-Arvore Da Vida<br />Dimensão: 10/15
+                        cm<br />Print Adesivo Em MDF
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3">
+                  <div class="card"
+                    onclick="openImageModal('assets/img/imagens/Captura de tela de 2023-11-23 12-34-40.png')">
+                    <img src="assets/img/imagens/Captura de tela de 2023-11-23 12-34-40_resized.png" class="img-fluid"
+                      style="height: 22rem" />
+                    <div class="color--card-body card-body">
+                      <p class="color--p card-text">
+                        Nome: <br />Dimensão: <br />Ano:
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3">
+                  <div class="card"
+                    onclick="openImageModal('assets/img/imagens/Captura de tela de 2023-11-23 14-50-47.png')">
+                    <img src="assets/img/imagens/Captura de tela de 2023-11-23 14-50-47.png" class="img-fluid"
+                      style="height: 22rem" />
+                    <div class="color--card-body card-body">
+                      <p class="color--p card-text">
+                        Nome: Casa Da Vovó Anisia <br />Dimensão: 60/80 cm<br />Ano:
+                        2023
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3">
+                  <div class="card"
+                    onclick="openImageModal('assets/img/imagens/Captura de tela de 2023-11-23 14-51-09.png')">
+                    <img src="assets/img/imagens/Captura de tela de 2023-11-23 14-51-09.png" class="img-fluid"
+                      style="height: 22rem" />
+                    <div class="color--card-body card-body">
+                      <p class="color--p card-text">
+                        Nome: Vitória <br />Dimensão:<br />Ano: 2023
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3">
+                  <div class="card"
+                    onclick="openImageModal('assets/img/imagens/Captura de tela de 2023-11-23 14-51-35.png')">
+                    <img src="assets/img/imagens/Captura de tela de 2023-11-23 14-51-35.png" class="img-fluid"
+                      style="height: 22rem" />
+                    <div class="color--card-body card-body">
+                      <p class="color--p card-text">
+                        Nome:Ze Pelintra <br />Dimensão:<br />Ano: 2022
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3">
+                  <div class="card"
+                    onclick="openImageModal('assets/img/imagens/Captura de tela de 2023-11-23 14-52-20.png')">
+                    <img src="assets/img/imagens/Captura de tela de 2023-11-23 14-52-20.png" class="img-fluid"
+                      style="height: 22rem" />
+                    <div class="color--card-body card-body">
+                      <p class="color--p card-text">
+                        Nome: Cheiro De Bioma <br />Dimensão:<br />Ano: 2021
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3">
+                  <div class="card"
+                    onclick="openImageModal('assets/img/imagens/Captura de tela de 2023-11-23 15-03-04.png')">
+                    <img src="assets/img/imagens/Captura de tela de 2023-11-23 15-03-04.png" class="img-fluid"
+                      style="height: 22rem" />
+                    <div class="color--card-body card-body">
+                      <p class="color--p card-text">
+                        Nome:Casa De Seu ZuZu<br />Dimensão:<br />Ano:
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3">
+                  <div class="card"
+                    onclick="openImageModal('assets/img/imagens/Captura de tela de 2023-11-23 15-03-20.png')">
+                    <img src="assets/img/imagens/Captura de tela de 2023-11-23 15-03-20.png" class="img-fluid"
+                      style="height: 22rem" />
+                    <div class="color--card-body card-body">
+                      <p class="color--p card-text">
+                        Nome: Eita Sertão <br />Dimensão:<br />Ano:
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3">
+                  <div class="card"
+                    onclick="openImageModal('assets/img/imagens/Captura de tela de 2023-11-23 15-03-40.png')">
+                    <img src="assets/img/imagens/Captura de tela de 2023-11-23 15-03-40.png" class="img-fluid"
+                      style="height: 22rem" />
+                    <div class="color--card-body card-body">
+                      <p class="color--p card-text">
+                        Nome: Outra Ceia <br />Dimensão:<br />Ano:
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3">
+                  <div class="card"
+                    onclick="openImageModal('assets/img/imagens/Captura de tela de 2023-11-23 15-04-27.png')">
+                    <img src="assets/img/imagens/Captura de tela de 2023-11-23 15-04-27_resized.png" class="img-fluid"
+                      style="height: 22rem" />
+                    <div class="color--card-body card-body">
+                      <p class="color--p card-text">
+                        Nome: <br />Dimensão:<br />Ano:
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="imageModalLabel">
+              Imagem em Destaque
+            </h5>
+            <button type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="Fechar">
+              <span class="square">X</span>
+            </button>
+          </div>
+          <div class="modal-body p-0 d-flex justify-content-center align-items-center">
+            <img src="" id="modalImage" class="img-fluid" alt="Imagem em Destaque" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Seção sobre -->
+    <section id="organizacoes">
+      <div class="py-2">
+        <div class="container">
+          <hr class="my-4" />
+          <div class="row">
+            <div class="col-12 text-center">
+              <h1 class="display-4 tema-fonte-2">Organizações</h1>
+              <p class="lead">Explore nossas organizações parceiras.</p>
+            </div>
+          </div>
+          <div id="organizacao" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel slide">
+                <div class="carousel-item active">
+                  <div class="col-md-3">
+                    <div class="card"
+                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_40_Imagem_0001.jpg')">
+                      <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_40_Imagem_0001.jpg" class="img-fluid"
+                        style="height: 22rem" />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3">
+                    <div class="card"
+                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_41_Imagem_0001.jpg')">
+                      <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_41_Imagem_0001.jpg" class="img-fluid"
+                        style="height: 22rem" />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3">
+                    <div class="card"
+                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_42_Imagem_0001.jpg')">
+                      <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_42_Imagem_0001.jpg" class="img-fluid"
+                        style="height: 22rem" />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3">
+                    <div class="card"
+                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_43_Imagem_0001.jpg')">
+                      <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_43_Imagem_0001_resized.jpg"
+                        class="img-fluid" style="height: 22rem" />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3">
+                    <div class="card"
+                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_40_Imagem_000144..jpg')">
+                      <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_40_Imagem_000144._resized.jpg"
+                        class="img-fluid" style="height: 22rem" />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3">
+                    <div class="card"
+                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_40_Imagem_000155..jpg')">
+                      <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_40_Imagem_000155._resized.jpg"
+                        class="img-fluid" style="height: 22rem" />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3">
+                    <div class="card"
+                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_46_Imagem_0001.jpg')">
+                      <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_46_Imagem_0001_resized.jpg"
+                        class="img-fluid" style="height: 22rem" />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3">
+                    <div class="card"
+                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_47_Imagem_0001.jpg')">
+                      <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_47_Imagem_0001.jpg" class="img-fluid"
+                        style="height: 22rem" />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3">
+                    <div class="card"
+                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_48_Imagem_0001.jpg')">
+                      <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_48_Imagem_0001.jpg" class="img-fluid"
+                        style="height: 22rem" />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3">
+                    <div class="card"
+                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_49_Imagem_0001.jpg')">
+                      <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_49_Imagem_0001.jpg" class="img-fluid"
+                        style="height: 22rem" />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3">
+                    <div class="card"
+                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_50_Imagem_0001.jpg')">
+                      <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_50_Imagem_0001.jpg" class="img-fluid"
+                        style="height: 22rem" />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3">
+                    <div class="card"
+                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_51_Imagem_0001.jpg')">
+                      <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_51_Imagem_0001.jpg" class="img-fluid"
+                        style="height: 22rem" />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3">
+                    <div class="card"
+                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_52_Imagem_0001.jpg')">
+                      <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_52_Imagem_0001.jpg" class="img-fluid"
+                        style="height: 22rem" />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3">
+                    <div class="card"
+                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_53_Imagem_0001.jpg')">
+                      <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_53_Imagem_0001.jpg" class="img-fluid"
+                        style="height: 22rem" />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3">
+                    <div class="card"
+                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_54_Imagem_0001.jpg')">
+                      <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_54_Imagem_0001.jpg" class="img-fluid"
+                        style="height: 22rem" />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3">
+                    <div class="card"
+                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_55_Imagem_0001.jpg')">
+                      <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_55_Imagem_0001.jpg" class="img-fluid"
+                        style="height: 22rem" />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3">
+                    <div class="card"
+                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_56_Imagem_0001.jpg')">
+                      <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_56_Imagem_0001.jpg" class="img-fluid"
+                        style="height: 22rem" />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3">
+                    <div class="card"
+                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_57_Imagem_0001.jpg')">
+                      <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_57_Imagem_0001.jpg" class="img-fluid"
+                        style="height: 22rem" />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3">
+                    <div class="card"
+                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_58_Imagem_0001.jpg')">
+                      <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_58_Imagem_0001.jpg" class="img-fluid"
+                        style="height: 22rem" />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3">
+                    <div class="card"
+                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_58_Imagem_0002.jpg')">
+                      <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_58_Imagem_0002.jpg" class="img-fluid"
+                        style="height: 22rem" />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3">
+                    <div class="card"
+                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_59_Imagem_0001.jpg')">
+                      <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_59_Imagem_0001.jpg" class="img-fluid"
+                        style="height: 22rem" />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3">
+                    <div class="card"
+                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_61_Imagem_0001.jpg')">
+                      <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_61_Imagem_0001.jpg" class="img-fluid"
+                        style="height: 22rem" />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3">
+                    <div class="card"
+                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_62_Imagem_0001.jpg')">
+                      <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_62_Imagem_0001.jpg" class="img-fluid"
+                        style="height: 22rem" />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3">
+                    <div class="card"
+                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_63_Imagem_0001.jpg')">
+                      <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_63_Imagem_0001.jpg" class="img-fluid"
+                        style="height: 22rem" />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3">
+                    <div class="card"
+                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_64_Imagem_0001.jpg')">
+                      <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_64_Imagem_0001.jpg" class="img-fluid"
+                        style="height: 22rem" />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3">
+                    <div class="card"
+                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_65_Imagem_0001.jpg')">
+                      <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_65_Imagem_0001.jpg" class="img-fluid"
+                        style="height: 22rem" />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3">
+                    <div class="card"
+                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_66_Imagem_0001.jpg')">
+                      <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_66_Imagem_0001.jpg" class="img-fluid"
+                        style="height: 22rem" />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3">
+                    <div class="card"
+                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_67_Imagem_0001.jpg')">
+                      <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_67_Imagem_0001_resized.jpg"
+                        class="img-fluid" style="height: 22rem" />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3">
+                    <div class="card"
+                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_68_Imagem_0001.jpg')">
+                      <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_68_Imagem_0001.jpg" class="img-fluid"
+                        style="height: 22rem" />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3">
+                    <div class="card"
+                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_69_Imagem_0001.jpg')">
+                      <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_69_Imagem_0001.jpg" class="img-fluid"
+                        style="height: 22rem" />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3">
+                    <div class="card"
+                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_70_Imagem_0001.jpg')">
+                      <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_70_Imagem_0001.jpg" class="img-fluid"
+                        style="height: 22rem" />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3">
+                    <div class="card"
+                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_71_Imagem_0001.jpg')">
+                      <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_71_Imagem_0001.jpg" class="img-fluid"
+                        style="height: 22rem" />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3">
+                    <div class="card"
+                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_72_Imagem_0001.jpg')">
+                      <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_72_Imagem_0001.jpg" class="img-fluid"
+                        style="height: 22rem" />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3">
+                    <div class="card"
+                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_73_Imagem_0001.jpg')">
+                      <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_73_Imagem_0001.jpg" class="img-fluid"
+                        style="height: 22rem" />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3">
+                    <div class="card"
+                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_74_Imagem_0001.jpg')">
+                      <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_74_Imagem_0001.jpg" class="img-fluid"
+                        style="height: 22rem" />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3">
+                    <div class="card"
+                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_75_Imagem_0001.jpg')">
+                      <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_75_Imagem_0001.jpg" class="img-fluid"
+                        style="height: 22rem" />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3">
+                    <div class="card"
+                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_75_Imagem_0002.jpg')">
+                      <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_75_Imagem_0002.jpg" class="img-fluid"
+                        style="height: 22rem" />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3">
+                    <div class="card"
+                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_76_Imagem_0001.jpg')">
+                      <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_76_Imagem_0001.jpg" class="img-fluid"
+                        style="height: 22rem" />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3">
+                    <div class="card"
+                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_77_Imagem_0001.jpg')">
+                      <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_77_Imagem_0001.jpg" class="img-fluid"
+                        style="height: 22rem" />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3">
+                    <div class="card"
+                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_77_Imagem_0002.jpg')">
+                      <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_77_Imagem_0002.jpg" class="img-fluid"
+                        style="height: 22rem" />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3">
+                    <div class="card"
+                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_78_Imagem_0001.jpg')">
+                      <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_78_Imagem_0001.jpg" class="img-fluid"
+                        style="height: 22rem" />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3">
+                    <div class="card"
+                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_78_Imagem_0002.jpg')">
+                      <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_78_Imagem_0002.jpg" class="img-fluid"
+                        style="height: 22rem" />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3">
+                    <div class="card"
+                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_78_Imagem_0003.jpg')">
+                      <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_78_Imagem_0003.jpg" class="img-fluid"
+                        style="height: 22rem" />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3">
+                    <div class="card"
+                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_79_Imagem_0001.jpg')">
+                      <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_79_Imagem_0001.jpg" class="img-fluid"
+                        style="height: 22rem" />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3">
+                    <div class="card"
+                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_79_Imagem_0002.jpg')">
+                      <img src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_79_Imagem_0002.jpg" class="img-fluid"
+                        style="height: 22rem" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#organizacao" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#organizacao" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção menu -->
+    <h1 id="sobre"></h1>
+    <h1></h1>
+    <section class="container menu_inicial">
+      <hr class="my-4" />
+      <div class="row">
+        <div class="col">
+          <h2 class="menu-titulo mt-5">
+            A Acarte tem suas exposições gratuitas!
+          </h2>
+
+          <p class="mt-4">
+            A associação Cultural Arte em Tela também designado pela sigla
+            ACARTE, constituído, é uma pessoa jurídica de direito privado,<br />sem
+            fins lucrativos, e duração por tempo indeterminado com sede na
+            zona rural do povoado Fátima do Piauí.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="container mb-5 menu-lista mt-4">
+      <div class="row">
+        <h3 class="menu-titulo mt-2 text-center">
+          Os objetivos do acarte são:
+        </h3>
+        <div class="row">
+          <div class="col-md-6 mt-4 d-flex justify-content-center align-items-center">
+            <img class="img-fluid imagem-menu" src="assets\img\imagem menu.png" alt="Imagem do texto para o menu" />
+          </div>
+          <div class="col-md-6 mt-4 d-flex justify-content-center align-items-center">
+            <ul>
+              <li>
+                Salvaguardar e democratizar o acesso ás artes, difundindo
+                conhecimentos sobre sustentabilidade ambiental, capoeira,
+                artes plásticas, literatura, xadrez e outros.
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#obras">Obras</a>
+              <li>
+                Incentivar crianças, jovens, adultos e idosos a praticar as
+                artes.
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#organizacoes">Organizações</a>
+              <li>Fomentar políticas públicas de incentivo à cultura.</li>
+              <li>
+                Promover exposições, oficinas, cursos, debates, palestras, e
+                outras atividades culturais.
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#sobre">Sobre</a>
+              <li>
+                Lutar contra toda e qualquer forma de discriminação e
+                preconceito.
               </li>
             </ul>
           </div>
         </div>
-      </nav>
-    </header>
-
-    <main>
-      <!-- seção inicio -->
-      <section class="container-fluid pt-5" id="capa">
-        <div class="main-text container">
-          <div class="row">
-            <div class="col-lg-3 text-center">
-              <img
-                calss="img-logo ml-5"
-                src=" assets/img/Logo acarte.png"
-                alt=""
-                width="200"
-                height="200"
-              />
-              <h1 class="titulo">ACARTE</h1>
-              <h3 class="subtitulo text-center">
-                Associação Cultural Arte
-                <span style="color: #f28b30">em Tela</span>
-              </h3>
-              <button
-                type="button"
-                class="btn btn-out-warning w-100 mt-5"
-                id="btnFaleConosco"
-              >
-                FALE CONOSCO
-              </button>
-            </div>
+        <div class="row">
+          <div class="col-md-6 mt-4 d-flex justify-content-center align-items-center">
+            <ul>
+              <li>
+                Formar parcerias com os governos Federais, Estaduais,
+                Municipais, ONGs e entidades de interesses afins.
+              </li>
+              <li>
+                Ser solidário com o próximo, visando uma sociedade mais justa
+                e fraterna.
+              </li>
+              <li>
+                Difundir atividades educativas educativas, culturais e
+                ciéntificas, realizando pesquisas, conferências, seminários e
+                cursos.
+              </li>
+              <li>
+                Contribuir para a formação de lideranças comunicatórias em
+                diferentes níveis, visando a construção de uma sociedade
+                justa, solidária, democrática, pluricultural pluriétnica.
+              </li>
+            </ul>
           </div>
-        </div>
-      </section>
-      <section id="obras">
-        <div class="py-5">
-          <div class="container">
-            <div class="row">
-              <div class="col-12 text-center">
-                <h1 class="display-4 tema-fonte">Obras de Arte</h1>
-                <p class="lead">Explore nossa coleção de obras de arte.</p>
-                <p class="lead"></p>
-              </div>
-            </div>
-            <!-- Carousel -->
-            <div
-              id="carouselExampleControls"
-              class="carousel slide"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active w-100 h-100 obejct-fit-cover">
-                  <div class="col-md-3">
-                    <div
-                      class="card"
-                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_02_Imagem_0001.jpg')"
-                    >
-                      <img
-                        src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_02_Imagem_0001_resized.jpg"
-                        class="img-fluid"
-                        style="height: 22rem"
-                      />
-                      <div class="color--card-body card-body">
-                        <p class="color--p card-text">
-                          Nome: Aurea Abstrata <br />Dimensão: 70/55 cm<br />Ano:
-                          2019
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="carousel-item">
-                  <div class="col-md-3">
-                    <div
-                      class="card"
-                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_03_Imagem_0001.jpg')"
-                    >
-                      <img
-                        src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_03_Imagem_0001_resized.jpg"
-                        class="img-fluid"
-                        style="height: 22rem"
-                      />
-                      <div class="color--card-body card-body">
-                        <p class="color--p card-text">
-                          Nome: Ossanha <br />Dimensão: 70/55 cm<br />Ano: 2019
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="carousel-item">
-                  <div class="col-md-3">
-                    <div
-                      class="card"
-                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_04_Imagem_0001.jpg')"
-                    >
-                      <img
-                        src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_04_Imagem_0001_resized.jpg"
-                        class="img-fluid"
-                        style="height: 22rem"
-                      />
-                      <div class="color--card-body card-body">
-                        <p class="color--p card-text">
-                          Nome: Árvore Da Vida <br />Dimensão: 70/55 cm<br />Ano:
-                          2019
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="carousel-item">
-                  <div class="col-md-3">
-                    <div
-                      class="card"
-                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_05_Imagem_0001.jpg')"
-                    >
-                      <img
-                        src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_05_Imagem_0001.jpg"
-                        class="img-fluid"
-                        style="height: 22rem"
-                      />
-                      <div class="color--card-body card-body">
-                        <p class="color--p card-text">
-                          Nome: Amazônia Oculta <br />Dimensão: 80/60 cm<br />Ano:
-                          2019
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="col-md-3">
-                    <div
-                      class="card"
-                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_06_Imagem_0001.jpg')"
-                    >
-                      <img
-                        src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_06_Imagem_0001.jpg"
-                        class="img-fluid"
-                        style="height: 22rem"
-                      />
-                      <div class="color--card-body card-body">
-                        <p class="color--p card-text">
-                          Nome: 3 Marias <br />Dimensão: 60/80cm<br />Ano: 2019
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="col-md-3">
-                    <div
-                      class="card"
-                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_07_Imagem_0001.jpg')"
-                    >
-                      <img
-                        src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_07_Imagem_0001.jpg"
-                        class="img-fluid"
-                        style="height: 22rem"
-                      />
-                      <div class="color--card-body card-body">
-                        <p class="color--p card-text">
-                          Nome: Efeito Natural <br />Dimensão: 80/60 cm<br />Ano:
-                          2019
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="col-md-3">
-                    <div
-                      class="card"
-                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_08_Imagem_0001.jpg')"
-                    >
-                      <img
-                        src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_08_Imagem_0001.jpg"
-                        class="img-fluid"
-                        style="height: 22rem"
-                      />
-                      <div class="color--card-body card-body">
-                        <p class="color--p card-text">
-                          Nome: Simbiose <br />Dimensão: 80/60 cm<br />Ano: 2019
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="col-md-3">
-                    <div
-                      class="card"
-                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_09_Imagem_0001.jpg')"
-                    >
-                      <img
-                        src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_09_Imagem_0001.jpg"
-                        class="img-fluid"
-                        style="height: 22rem"
-                      />
-                      <div class="color--card-body card-body">
-                        <p class="color--p card-text">
-                          Nome: Chronútero<br />Dimensão: 55/70 cm<br />Ano:
-                          2019
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="col-md-3">
-                    <div
-                      class="card"
-                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_10_Imagem_0001.jpg')"
-                    >
-                      <img
-                        src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_10_Imagem_0001.jpg"
-                        class="img-fluid"
-                        style="height: 22rem"
-                      />
-                      <div class="color--card-body card-body">
-                        <p class="color--p card-text">
-                          Nome: A Raça Humana<br />Dimensão: 70/100 cm<br />Ano:
-                          2019
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="col-md-3">
-                    <div
-                      class="card"
-                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_11_Imagem_0001.jpg')"
-                    >
-                      <img
-                        src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_11_Imagem_0001.jpg"
-                        class="img-fluid"
-                        style="height: 22rem"
-                      />
-                      <div class="color--card-body card-body">
-                        <p class="color--p card-text">
-                          Nome: Alegoria Da Caverna<br />Dimensão: 100/100 cm<br />Ano:
-                          2019
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="col-md-3">
-                    <div
-                      class="card"
-                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_12_Imagem_0001.jpg')"
-                    >
-                      <img
-                        src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_12_Imagem_0001.jpg"
-                        class="img-fluid"
-                        style="height: 22rem"
-                      />
-                      <div class="color--card-body card-body">
-                        <p class="color--p card-text">
-                          Nome: Jardim <br />Dimensão: 50/150 cm<br />Ano: 2019
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="col-md-3">
-                    <div
-                      class="card"
-                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_13_Imagem_0001.jpg')"
-                    >
-                      <img
-                        src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_13_Imagem_0001_resized.jpg"
-                        class="img-fluid"
-                        style="height: 22rem"
-                      />
-                      <div class="color--card-body card-body">
-                        <p class="color--p card-text">
-                          Nome: Útero <br />Dimensão: 75/50 cm<br />Ano: 2019
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="col-md-3">
-                    <div
-                      class="card"
-                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_14_Imagem_0001.jpg')"
-                    >
-                      <img
-                        src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_14_Imagem_0001_resized.jpg"
-                        class="img-fluid"
-                        style="height: 22rem"
-                      />
-                      <div class="color--card-body card-body">
-                        <p class="color--p card-text">
-                          Nome: A Cozinha <br />Dimensão: 70/50 cm<br />Ano:
-                          2019
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="col-md-3">
-                    <div
-                      class="card"
-                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_15_Imagem_0001.jpg')"
-                    >
-                      <img
-                        src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_15_Imagem_0001.jpg"
-                        class="img-fluid"
-                        style="height: 22rem"
-                      />
-                      <div class="color--card-body card-body">
-                        <p class="color--p card-text">
-                          Nome: O Caminho <br />Dimensão: 80/60 cm<br />Ano:
-                          2019
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="col-md-3">
-                    <div
-                      class="card"
-                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_16_Imagem_0001.jpg')"
-                    >
-                      <img
-                        src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_28_Imagem_0001_resized.jpg"
-                        class="img-fluid"
-                        style="height: 22rem"
-                      />
-                      <div class="color--card-body card-body">
-                        <p class="color--p card-text">
-                          Nome: Elevador Lacerda <br />Dimensão: 70/55 cm<br />Ano:
-                          2019
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="col-md-3">
-                    <div
-                      class="card"
-                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_17_Imagem_0001.jpg')"
-                    >
-                      <img
-                        src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_17_Imagem_0001.jpg"
-                        class="img-fluid"
-                        style="height: 22rem"
-                      />
-                      <div class="color--card-body card-body">
-                        <p class="color--p card-text">
-                          Nome: Universo Paralelo <br />Dimensão: 150/100 cm<br />Ano:
-                          2018
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="col-md-3">
-                    <div
-                      class="card"
-                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_18_Imagem_0001.jpg')"
-                    >
-                      <img
-                        src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_18_Imagem_0001.jpg"
-                        class="img-fluid"
-                        style="height: 22rem"
-                      />
-                      <div class="color--card-body card-body">
-                        <p class="color--p card-text">
-                          Nome: Gaia <br />Dimensão: 70/55 cm<br />Ano: 2018
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="col-md-3">
-                    <div
-                      class="card"
-                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_19_Imagem_0001.jpg')"
-                    >
-                      <img
-                        src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_19_Imagem_0001.jpg"
-                        class="img-fluid"
-                        style="height: 22rem"
-                      />
-                      <div class="color--card-body card-body">
-                        <p class="color--p card-text">
-                          Nome: Pollock Expression<br />Dimensão: 70/55 cm<br />Ano:
-                          2018
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="col-md-3">
-                    <div
-                      class="card"
-                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_20_Imagem_0001.jpg')"
-                    >
-                      <img
-                        src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_20_Imagem_0001.jpg"
-                        class="img-fluid"
-                        style="height: 22rem"
-                      />
-                      <div class="color--card-body card-body">
-                        <p class="color--p card-text">
-                          Nome: <b>Nirvana</b> <br />Dimensão: 80/60 cm<br />Ano:
-                          2018
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="col-md-3">
-                    <div
-                      class="card"
-                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_21_Imagem_0001.jpg')"
-                    >
-                      <img
-                        src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_21_Imagem_0001.jpg"
-                        class="img-fluid"
-                        style="height: 22rem"
-                      />
-                      <div class="color--card-body card-body">
-                        <p class="color--p card-text">
-                          Nome: O - <br />Dimensão: 80/60 cm<br />Ano: 2018
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="col-md-3">
-                    <div
-                      class="card"
-                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_22_Imagem_0001.jpg')"
-                    >
-                      <img
-                        src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_22_Imagem_0001.jpg"
-                        class="img-fluid"
-                        style="height: 22rem"
-                      />
-                      <div class="color--card-body card-body">
-                        <p class="color--p card-text">
-                          Nome: Azul <br />Dimensão: 80/60 cm<br />Ano: 2018
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="col-md-3">
-                    <div
-                      class="card"
-                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_23_Imagem_0001.jpg')"
-                    >
-                      <img
-                        src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_23_Imagem_0001.jpg"
-                        class="img-fluid"
-                        style="height: 22rem"
-                      />
-                      <div class="color--card-body card-body">
-                        <p class="color--p card-text">
-                          Nome: Híbrido <br />Dimensão: 75/55 cm<br />Ano: 2018
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="col-md-3">
-                    <div
-                      class="card"
-                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_24_Imagem_0001.jpg')"
-                    >
-                      <img
-                        src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_24_Imagem_0001.jpg"
-                        class="img-fluid"
-                        style="height: 22rem"
-                      />
-                      <div class="color--card-body card-body">
-                        <p class="color--p card-text">
-                          CHAVEIROS <br />PRINTS EM ADESIVO<br />SOBRE MDF
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="col-md-3">
-                    <div
-                      class="card"
-                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_26_Imagem_0001.jpg')"
-                    >
-                      <img
-                        src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_26_Imagem_0001.jpg"
-                        class="img-fluid"
-                        style="height: 22rem"
-                      />
-                      <div class="color--card-body card-body">
-                        <p class="color--p card-text">
-                          Nome: Miniatura-Simbiose<br />Dimensão: 10/15 cm<br />Print
-                          Adesivo Em MDF
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="col-md-3">
-                    <div
-                      class="card"
-                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_27_Imagem_0001.jpg')"
-                    >
-                      <img
-                        src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_27_Imagem_0001.jpg"
-                        class="img-fluid"
-                        style="height: 22rem"
-                      />
-                      <div class="color--card-body card-body">
-                        <p class="color--p card-text">
-                          Nome: Miniatura-Chronutero<br />Dimensão: 10/15 cm<br />Print
-                          Adesivo Em MDF
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="col-md-3">
-                    <div
-                      class="card"
-                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_28_Imagem_0001.jpg')"
-                    >
-                      <img
-                        src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_28_Imagem_0001_resized.jpg"
-                        class="img-fluid"
-                        style="height: 22rem"
-                      />
-                      <div class="color--card-body card-body">
-                        <p class="color--p card-text">
-                          Nome: Miniatura- Elevador Lacerda<br />Dimensão: 10/15
-                          cm<br />Print Adesivo Em MDF
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="col-md-3">
-                    <div
-                      class="card"
-                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_29_Imagem_0001.jpg')"
-                    >
-                      <img
-                        src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_29_Imagem_0001.jpg"
-                        class="img-fluid"
-                        style="height: 22rem"
-                      />
-                      <div class="color--card-body card-body">
-                        <p class="color--p card-text">
-                          Nome: Miniatura-O Caminho<br />Dimensão: 10/15 cm<br />Print
-                          Adesivo Em MDF
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="col-md-3">
-                    <div
-                      class="card"
-                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_30_Imagem_0001.jpg')"
-                    >
-                      <img
-                        src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_14_Imagem_0001_resized.jpg"
-                        class="img-fluid"
-                        style="height: 22rem"
-                      />
-                      <div class="color--card-body card-body">
-                        <p class="color--p card-text">
-                          Nome: Miniatura-A Cozinha <br />Dimensão: 10/15 cm<br />Print
-                          Adesivo Em MDF
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="col-md-3">
-                    <div
-                      class="card"
-                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_31_Imagem_0001.jpg')"
-                    >
-                      <img
-                        src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_31_Imagem_0001.jpg"
-                        class="img-fluid"
-                        style="height: 22rem"
-                      />
-                      <div class="color--card-body card-body">
-                        <p class="color--p card-text">
-                          Nome: Miniatura-A RAça Humana<br />Dimensão: 10/15
-                          cm<br />Print Adesivo Em MDF
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="col-md-3">
-                    <div
-                      class="card"
-                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_32_Imagem_0001.jpg')"
-                    >
-                      <img
-                        src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_32_Imagem_0001.jpg"
-                        class="img-fluid"
-                        style="height: 22rem"
-                      />
-                      <div class="color--card-body card-body">
-                        <p class="color--p card-text">
-                          Nome: Miniatura-As 3 Marias<br />Dimensão: 10/15 cm<br />Print
-                          Adesivo Em MDF
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="col-md-3">
-                    <div
-                      class="card"
-                      onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_04_Imagem_0001_resized.jpg')"
-                    >
-                      <img
-                        src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_04_Imagem_0001_resized.jpg"
-                        class="img-fluid"
-                        style="height: 22rem"
-                      />
-                      <div class="color--card-body card-body">
-                        <p class="color--p card-text">
-                          Nome: Miniatura-Arvore Da Vida<br />Dimensão: 10/15
-                          cm<br />Print Adesivo Em MDF
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="col-md-3">
-                    <div
-                      class="card"
-                      onclick="openImageModal('assets/img/imagens/Captura de tela de 2023-11-23 12-34-40.png')"
-                    >
-                      <img
-                        src="assets/img/imagens/Captura de tela de 2023-11-23 12-34-40_resized.png"
-                        class="img-fluid"
-                        style="height: 22rem"
-                      />
-                      <div class="color--card-body card-body">
-                        <p class="color--p card-text">
-                          Nome: <br />Dimensão: <br />Ano:
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="col-md-3">
-                    <div
-                      class="card"
-                      onclick="openImageModal('assets/img/imagens/Captura de tela de 2023-11-23 14-50-47.png')"
-                    >
-                      <img
-                        src="assets/img/imagens/Captura de tela de 2023-11-23 14-50-47.png"
-                        class="img-fluid"
-                        style="height: 22rem"
-                      />
-                      <div class="color--card-body card-body">
-                        <p class="color--p card-text">
-                          Nome: Casa Da Vovó Anisia <br />Dimensão: 60/80 cm<br />Ano:
-                          2023
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="col-md-3">
-                    <div
-                      class="card"
-                      onclick="openImageModal('assets/img/imagens/Captura de tela de 2023-11-23 14-51-09.png')"
-                    >
-                      <img
-                        src="assets/img/imagens/Captura de tela de 2023-11-23 14-51-09.png"
-                        class="img-fluid"
-                        style="height: 22rem"
-                      />
-                      <div class="color--card-body card-body">
-                        <p class="color--p card-text">
-                          Nome: Vitória <br />Dimensão:<br />Ano: 2023
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="col-md-3">
-                    <div
-                      class="card"
-                      onclick="openImageModal('assets/img/imagens/Captura de tela de 2023-11-23 14-51-35.png')"
-                    >
-                      <img
-                        src="assets/img/imagens/Captura de tela de 2023-11-23 14-51-35.png"
-                        class="img-fluid"
-                        style="height: 22rem"
-                      />
-                      <div class="color--card-body card-body">
-                        <p class="color--p card-text">
-                          Nome:Ze Pelintra <br />Dimensão:<br />Ano: 2022
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="col-md-3">
-                    <div
-                      class="card"
-                      onclick="openImageModal('assets/img/imagens/Captura de tela de 2023-11-23 14-52-20.png')"
-                    >
-                      <img
-                        src="assets/img/imagens/Captura de tela de 2023-11-23 14-52-20.png"
-                        class="img-fluid"
-                        style="height: 22rem"
-                      />
-                      <div class="color--card-body card-body">
-                        <p class="color--p card-text">
-                          Nome: Cheiro De Bioma <br />Dimensão:<br />Ano: 2021
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="col-md-3">
-                    <div
-                      class="card"
-                      onclick="openImageModal('assets/img/imagens/Captura de tela de 2023-11-23 15-03-04.png')"
-                    >
-                      <img
-                        src="assets/img/imagens/Captura de tela de 2023-11-23 15-03-04.png"
-                        class="img-fluid"
-                        style="height: 22rem"
-                      />
-                      <div class="color--card-body card-body">
-                        <p class="color--p card-text">
-                          Nome:Casa De Seu ZuZu<br />Dimensão:<br />Ano:
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="col-md-3">
-                    <div
-                      class="card"
-                      onclick="openImageModal('assets/img/imagens/Captura de tela de 2023-11-23 15-03-20.png')"
-                    >
-                      <img
-                        src="assets/img/imagens/Captura de tela de 2023-11-23 15-03-20.png"
-                        class="img-fluid"
-                        style="height: 22rem"
-                      />
-                      <div class="color--card-body card-body">
-                        <p class="color--p card-text">
-                          Nome: Eita Sertão <br />Dimensão:<br />Ano:
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="col-md-3">
-                    <div
-                      class="card"
-                      onclick="openImageModal('assets/img/imagens/Captura de tela de 2023-11-23 15-03-40.png')"
-                    >
-                      <img
-                        src="assets/img/imagens/Captura de tela de 2023-11-23 15-03-40.png"
-                        class="img-fluid"
-                        style="height: 22rem"
-                      />
-                      <div class="color--card-body card-body">
-                        <p class="color--p card-text">
-                          Nome: Outra Ceia <br />Dimensão:<br />Ano:
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="col-md-3">
-                    <div
-                      class="card"
-                      onclick="openImageModal('assets/img/imagens/Captura de tela de 2023-11-23 15-04-27.png')"
-                    >
-                      <img
-                        src="assets/img/imagens/Captura de tela de 2023-11-23 15-04-27_resized.png"
-                        class="img-fluid"
-                        style="height: 22rem"
-                      />
-                      <div class="color--card-body card-body">
-                        <p class="color--p card-text">
-                          Nome: <br />Dimensão:<br />Ano:
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselExampleControls"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselExampleControls"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <div
-        class="modal fade"
-        id="imageModal"
-        tabindex="-1"
-        aria-labelledby="imageModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered modal-xl">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="imageModalLabel">
-                Imagem em Destaque
-              </h5>
-              <button
-                type="button"
-                class="btn btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Fechar"
-              >
-                <span class="square">X</span>
-              </button>
-            </div>
-            <div
-              class="modal-body p-0 d-flex justify-content-center align-items-center"
-            >
-              <img
-                src=""
-                id="modalImage"
-                class="img-fluid"
-                alt="Imagem em Destaque"
-              />
-            </div>
+          <div class="col-md-6 mt-4 d-flex justify-content-center align-items-center">
+            <img class="img-fluid" src="assets\img\imagem menu 2.png" alt="" />
           </div>
         </div>
       </div>
+    </section>
+  </main>
 
-      <!-- Seção sobre -->
-      <section id="organizacoes">
-        <div class="py-2">
-          <div class="container">
-            <hr class="my-4" />
-            <div class="row">
-              <div class="col-12 text-center">
-                <h1 class="display-4 tema-fonte-2">Organizações</h1>
-                <p class="lead">Explore nossas organizações parceiras.</p>
-              </div>
-            </div>
-            <div
-              id="organizacao"
-              class="carousel slide"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-inner" role="listbox">
-                <div class="carousel slide">
-                  <div class="carousel-item active">
-                    <div class="col-md-3">
-                      <div
-                        class="card"
-                        onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_40_Imagem_0001.jpg')"
-                      >
-                        <img
-                          src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_40_Imagem_0001.jpg"
-                          class="img-fluid"
-                          style="height: 22rem"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="col-md-3">
-                      <div
-                        class="card"
-                        onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_41_Imagem_0001.jpg')"
-                      >
-                        <img
-                          src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_41_Imagem_0001.jpg"
-                          class="img-fluid"
-                          style="height: 22rem"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="col-md-3">
-                      <div
-                        class="card"
-                        onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_42_Imagem_0001.jpg')"
-                      >
-                        <img
-                          src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_42_Imagem_0001.jpg"
-                          class="img-fluid"
-                          style="height: 22rem"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="col-md-3">
-                      <div
-                        class="card"
-                        onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_43_Imagem_0001.jpg')"
-                      >
-                        <img
-                          src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_43_Imagem_0001_resized.jpg"
-                          class="img-fluid"
-                          style="height: 22rem"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="col-md-3">
-                      <div
-                        class="card"
-                        onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_40_Imagem_000144..jpg')"
-                      >
-                        <img
-                          src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_40_Imagem_000144._resized.jpg"
-                          class="img-fluid"
-                          style="height: 22rem"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="col-md-3">
-                      <div
-                        class="card"
-                        onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_40_Imagem_000155..jpg')"
-                      >
-                        <img
-                          src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_40_Imagem_000155._resized.jpg"
-                          class="img-fluid"
-                          style="height: 22rem"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="col-md-3">
-                      <div
-                        class="card"
-                        onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_46_Imagem_0001.jpg')"
-                      >
-                        <img
-                          src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_46_Imagem_0001_resized.jpg"
-                          class="img-fluid"
-                          style="height: 22rem"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="col-md-3">
-                      <div
-                        class="card"
-                        onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_47_Imagem_0001.jpg')"
-                      >
-                        <img
-                          src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_47_Imagem_0001.jpg"
-                          class="img-fluid"
-                          style="height: 22rem"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="col-md-3">
-                      <div
-                        class="card"
-                        onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_48_Imagem_0001.jpg')"
-                      >
-                        <img
-                          src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_48_Imagem_0001.jpg"
-                          class="img-fluid"
-                          style="height: 22rem"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="col-md-3">
-                      <div
-                        class="card"
-                        onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_49_Imagem_0001.jpg')"
-                      >
-                        <img
-                          src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_49_Imagem_0001.jpg"
-                          class="img-fluid"
-                          style="height: 22rem"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="col-md-3">
-                      <div
-                        class="card"
-                        onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_50_Imagem_0001.jpg')"
-                      >
-                        <img
-                          src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_50_Imagem_0001.jpg"
-                          class="img-fluid"
-                          style="height: 22rem"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="col-md-3">
-                      <div
-                        class="card"
-                        onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_51_Imagem_0001.jpg')"
-                      >
-                        <img
-                          src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_51_Imagem_0001.jpg"
-                          class="img-fluid"
-                          style="height: 22rem"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="col-md-3">
-                      <div
-                        class="card"
-                        onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_52_Imagem_0001.jpg')"
-                      >
-                        <img
-                          src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_52_Imagem_0001.jpg"
-                          class="img-fluid"
-                          style="height: 22rem"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="col-md-3">
-                      <div
-                        class="card"
-                        onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_53_Imagem_0001.jpg')"
-                      >
-                        <img
-                          src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_53_Imagem_0001.jpg"
-                          class="img-fluid"
-                          style="height: 22rem"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="col-md-3">
-                      <div
-                        class="card"
-                        onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_54_Imagem_0001.jpg')"
-                      >
-                        <img
-                          src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_54_Imagem_0001.jpg"
-                          class="img-fluid"
-                          style="height: 22rem"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="col-md-3">
-                      <div
-                        class="card"
-                        onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_55_Imagem_0001.jpg')"
-                      >
-                        <img
-                          src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_55_Imagem_0001.jpg"
-                          class="img-fluid"
-                          style="height: 22rem"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="col-md-3">
-                      <div
-                        class="card"
-                        onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_56_Imagem_0001.jpg')"
-                      >
-                        <img
-                          src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_56_Imagem_0001.jpg"
-                          class="img-fluid"
-                          style="height: 22rem"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="col-md-3">
-                      <div
-                        class="card"
-                        onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_57_Imagem_0001.jpg')"
-                      >
-                        <img
-                          src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_57_Imagem_0001.jpg"
-                          class="img-fluid"
-                          style="height: 22rem"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="col-md-3">
-                      <div
-                        class="card"
-                        onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_58_Imagem_0001.jpg')"
-                      >
-                        <img
-                          src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_58_Imagem_0001.jpg"
-                          class="img-fluid"
-                          style="height: 22rem"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="col-md-3">
-                      <div
-                        class="card"
-                        onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_58_Imagem_0002.jpg')"
-                      >
-                        <img
-                          src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_58_Imagem_0002.jpg"
-                          class="img-fluid"
-                          style="height: 22rem"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="col-md-3">
-                      <div
-                        class="card"
-                        onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_59_Imagem_0001.jpg')"
-                      >
-                        <img
-                          src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_59_Imagem_0001.jpg"
-                          class="img-fluid"
-                          style="height: 22rem"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="col-md-3">
-                      <div
-                        class="card"
-                        onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_61_Imagem_0001.jpg')"
-                      >
-                        <img
-                          src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_61_Imagem_0001.jpg"
-                          class="img-fluid"
-                          style="height: 22rem"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="col-md-3">
-                      <div
-                        class="card"
-                        onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_62_Imagem_0001.jpg')"
-                      >
-                        <img
-                          src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_62_Imagem_0001.jpg"
-                          class="img-fluid"
-                          style="height: 22rem"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="col-md-3">
-                      <div
-                        class="card"
-                        onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_63_Imagem_0001.jpg')"
-                      >
-                        <img
-                          src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_63_Imagem_0001.jpg"
-                          class="img-fluid"
-                          style="height: 22rem"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="col-md-3">
-                      <div
-                        class="card"
-                        onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_64_Imagem_0001.jpg')"
-                      >
-                        <img
-                          src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_64_Imagem_0001.jpg"
-                          class="img-fluid"
-                          style="height: 22rem"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="col-md-3">
-                      <div
-                        class="card"
-                        onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_65_Imagem_0001.jpg')"
-                      >
-                        <img
-                          src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_65_Imagem_0001.jpg"
-                          class="img-fluid"
-                          style="height: 22rem"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="col-md-3">
-                      <div
-                        class="card"
-                        onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_66_Imagem_0001.jpg')"
-                      >
-                        <img
-                          src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_66_Imagem_0001.jpg"
-                          class="img-fluid"
-                          style="height: 22rem"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="col-md-3">
-                      <div
-                        class="card"
-                        onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_67_Imagem_0001.jpg')"
-                      >
-                        <img
-                          src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_67_Imagem_0001_resized.jpg"
-                          class="img-fluid"
-                          style="height: 22rem"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="col-md-3">
-                      <div
-                        class="card"
-                        onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_68_Imagem_0001.jpg')"
-                      >
-                        <img
-                          src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_68_Imagem_0001.jpg"
-                          class="img-fluid"
-                          style="height: 22rem"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="col-md-3">
-                      <div
-                        class="card"
-                        onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_69_Imagem_0001.jpg')"
-                      >
-                        <img
-                          src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_69_Imagem_0001.jpg"
-                          class="img-fluid"
-                          style="height: 22rem"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="col-md-3">
-                      <div
-                        class="card"
-                        onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_70_Imagem_0001.jpg')"
-                      >
-                        <img
-                          src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_70_Imagem_0001.jpg"
-                          class="img-fluid"
-                          style="height: 22rem"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="col-md-3">
-                      <div
-                        class="card"
-                        onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_71_Imagem_0001.jpg')"
-                      >
-                        <img
-                          src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_71_Imagem_0001.jpg"
-                          class="img-fluid"
-                          style="height: 22rem"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="col-md-3">
-                      <div
-                        class="card"
-                        onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_72_Imagem_0001.jpg')"
-                      >
-                        <img
-                          src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_72_Imagem_0001.jpg"
-                          class="img-fluid"
-                          style="height: 22rem"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="col-md-3">
-                      <div
-                        class="card"
-                        onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_73_Imagem_0001.jpg')"
-                      >
-                        <img
-                          src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_73_Imagem_0001.jpg"
-                          class="img-fluid"
-                          style="height: 22rem"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="col-md-3">
-                      <div
-                        class="card"
-                        onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_74_Imagem_0001.jpg')"
-                      >
-                        <img
-                          src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_74_Imagem_0001.jpg"
-                          class="img-fluid"
-                          style="height: 22rem"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="col-md-3">
-                      <div
-                        class="card"
-                        onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_75_Imagem_0001.jpg')"
-                      >
-                        <img
-                          src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_75_Imagem_0001.jpg"
-                          class="img-fluid"
-                          style="height: 22rem"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="col-md-3">
-                      <div
-                        class="card"
-                        onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_75_Imagem_0002.jpg')"
-                      >
-                        <img
-                          src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_75_Imagem_0002.jpg"
-                          class="img-fluid"
-                          style="height: 22rem"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="col-md-3">
-                      <div
-                        class="card"
-                        onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_76_Imagem_0001.jpg')"
-                      >
-                        <img
-                          src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_76_Imagem_0001.jpg"
-                          class="img-fluid"
-                          style="height: 22rem"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="col-md-3">
-                      <div
-                        class="card"
-                        onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_77_Imagem_0001.jpg')"
-                      >
-                        <img
-                          src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_77_Imagem_0001.jpg"
-                          class="img-fluid"
-                          style="height: 22rem"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="col-md-3">
-                      <div
-                        class="card"
-                        onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_77_Imagem_0002.jpg')"
-                      >
-                        <img
-                          src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_77_Imagem_0002.jpg"
-                          class="img-fluid"
-                          style="height: 22rem"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="col-md-3">
-                      <div
-                        class="card"
-                        onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_78_Imagem_0001.jpg')"
-                      >
-                        <img
-                          src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_78_Imagem_0001.jpg"
-                          class="img-fluid"
-                          style="height: 22rem"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="col-md-3">
-                      <div
-                        class="card"
-                        onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_78_Imagem_0002.jpg')"
-                      >
-                        <img
-                          src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_78_Imagem_0002.jpg"
-                          class="img-fluid"
-                          style="height: 22rem"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="col-md-3">
-                      <div
-                        class="card"
-                        onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_78_Imagem_0003.jpg')"
-                      >
-                        <img
-                          src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_78_Imagem_0003.jpg"
-                          class="img-fluid"
-                          style="height: 22rem"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="col-md-3">
-                      <div
-                        class="card"
-                        onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_79_Imagem_0001.jpg')"
-                      >
-                        <img
-                          src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_79_Imagem_0001.jpg"
-                          class="img-fluid"
-                          style="height: 22rem"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="col-md-3">
-                      <div
-                        class="card"
-                        onclick="openImageModal('assets/img/imagens/ilovepdf_merged (2) (1)_Página_79_Imagem_0002.jpg')"
-                      >
-                        <img
-                          src="assets/img/imagens/ilovepdf_merged (2) (1)_Página_79_Imagem_0002.jpg"
-                          class="img-fluid"
-                          style="height: 22rem"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#organizacao"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#organizacao"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Seção menu -->
-      <h1 id="sobre"></h1>
-      <h1></h1>
-      <section class="container menu_inicial">
-        <hr class="my-4" />
+  <!-- Seção rodapé -->
+  <footer>
+    <section class="fundo-container container-fluid pb-5">
+      <div class="container">
         <div class="row">
-          <div class="col">
-            <h2 class="menu-titulo mt-5">
-              A Acarte tem suas exposições gratuitas!
-            </h2>
-
-            <p class="mt-4">
-              A associação Cultural Arte em Tela também designado pela sigla
-              ACARTE, constituído, é uma pessoa jurídica de direito privado,<br />sem
-              fins lucrativos, e duração por tempo indeterminado com sede na
-              zona rural do povoado Fátima do Piauí.
+          <div class="col-md-3 col-sm-12 d-flex align-items-center justify-content-center mb-3">
+            <img src="assets\img\IF.png" alt="logomarca do IFPI" class="w-50 imagem-ifpi img-fluid" />
+          </div>
+          <div class="col-md-3 col-sm-12 d-flex align-items-center justify-content-center mb-3">
+            <img src="assets\img\logo_mambee-removebg-preview.png" alt="logomarca da mambee"
+              class="w-50 imagem-mambee" />
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <p class="texto-rodape text-center">
+              © ACARTE. Desenvolvido por
+              <a href="https://github.com/ifpi-picos/landingpage-grupo-02" target="_blank">grupo 02</a>
+              na
+              <a href="https://mambeeifpi.github.io/" target="_blank">MAMBEE</a>
+              <a href="https://mambeebootcamp.netlify.app/">BOOTCAMP</a>
+              do
+              <a href="https://www.ifpi.edu.br/picos" target="_blank">IFPI Picos - 2023</a>
             </p>
           </div>
         </div>
-      </section>
-      <section class="container mb-5 menu-lista mt-4">
-        <div class="row">
-          <h3 class="menu-titulo mt-2 text-center">
-            Os objetivos do acarte são:
-          </h3>
-          <div class="row">
-            <div
-              class="col-md-6 mt-4 d-flex justify-content-center align-items-center"
-            >
-              <img
-                class="img-fluid imagem-menu"
-                src="assets\img\imagem menu.png"
-                alt="Imagem do texto para o menu"
-              />
-            </div>
-            <div
-              class="col-md-6 mt-4 d-flex justify-content-center align-items-center"
-            >
-              <ul>
-                <li>
-                  Salvaguardar e democratizar o acesso ás artes, difundindo
-                  conhecimentos sobre sustentabilidade ambiental, capoeira,
-                  artes plásticas, literatura, xadrez e outros.
-                </li>
-                <li>
-                  Incentivar crianças, jovens, adultos e idosos a praticar as
-                  artes.
-                </li>
-                <li>Fomentar políticas públicas de incentivo à cultura.</li>
-                <li>
-                  Promover exposições, oficinas, cursos, debates, palestras, e
-                  outras atividades culturais.
-                </li>
-                <li>
-                  Lutar contra toda e qualquer forma de discriminação e
-                  preconceito.
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="row">
-            <div
-              class="col-md-6 mt-4 d-flex justify-content-center align-items-center"
-            >
-              <ul>
-                <li>
-                  Formar parcerias com os governos Federais, Estaduais,
-                  Municipais, ONGs e entidades de interesses afins.
-                </li>
-                <li>
-                  Ser solidário com o próximo, visando uma sociedade mais justa
-                  e fraterna.
-                </li>
-                <li>
-                  Difundir atividades educativas educativas, culturais e
-                  ciéntificas, realizando pesquisas, conferências, seminários e
-                  cursos.
-                </li>
-                <li>
-                  Contribuir para a formação de lideranças comunicatórias em
-                  diferentes níveis, visando a construção de uma sociedade
-                  justa, solidária, democrática, pluricultural pluriétnica.
-                </li>
-              </ul>
-            </div>
-            <div
-              class="col-md-6 mt-4 d-flex justify-content-center align-items-center"
-            >
-              <img
-                class="img-fluid"
-                src="assets\img\imagem menu 2.png"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
+      </div>
+    </section>
+  </footer>
 
-    <!-- Seção rodapé -->
-    <footer>
-      <section class="fundo-container container-fluid pb-5">
-        <div class="container">
-          <div class="row">
-            <div
-              class="col-md-3 col-sm-12 d-flex align-items-center justify-content-center mb-3"
-            >
-              <img
-                src="assets\img\IF.png"
-                alt="logomarca do IFPI"
-                class="w-50 imagem-ifpi img-fluid"
-              />
-            </div>
-            <div
-              class="col-md-3 col-sm-12 d-flex align-items-center justify-content-center mb-3"
-            >
-              <img
-                src="assets\img\logo_mambee-removebg-preview.png"
-                alt="logomarca da mambee"
-                class="w-50 imagem-mambee"
-              />
-            </div>
-            <div class="col-md-6 col-sm-12">
-              <p class="texto-rodape text-center">
-                © ACARTE. Landing Page desenvolvida pelo grupo da mambee
-                bootcamp
-                <a
-                  href="https://github.com/ifpi-picos/landingpage-grupo-02"
-                  target="_blank"
-                  >grupo 02</a
-                >
-                - 2023
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </footer>
+  <script src=" https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
 
-    <script
-      src=" https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"
-    ></script>
+  <!-- rodrigo -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+  <script src="assets/js/script.js"></script>
+</body>
 
-    <!-- rodrigo -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-      crossorigin="anonymous"
-    ></script>
-    <script src="assets/js/script.js"></script>
-  </body>
 </html>
